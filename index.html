@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayesha Fatima — Portfolio</title>
+  <meta name="description" content="Ayesha Fatima — BSCS student, beginner web developer, and PM Youth Laptop Scheme 2025 recipient.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css?v=2026c">
+</head>
+<body>
+
+  <!-- Header / horizontal navbar -->
+  <header class="site-header">
+    <a href="#home" class="logo" aria-label="Home">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+        <g fill="currentColor">
+          <ellipse cx="12" cy="5.2" rx="2.1" ry="3.6"/>
+          <ellipse cx="12" cy="18.8" rx="2.1" ry="3.6"/>
+          <ellipse cx="5.2" cy="12" rx="3.6" ry="2.1"/>
+          <ellipse cx="18.8" cy="12" rx="3.6" ry="2.1"/>
+        </g>
+        <g fill="var(--coral)">
+          <ellipse cx="7" cy="7" rx="2" ry="2.6"/>
+          <ellipse cx="17" cy="7" rx="2" ry="2.6"/>
+          <ellipse cx="7" cy="17" rx="2" ry="2.6"/>
+          <ellipse cx="17" cy="17" rx="2" ry="2.6"/>
+        </g>
+        <circle cx="12" cy="12" r="2.4" fill="var(--navy)"/>
+        <circle cx="12" cy="12" r="0.9" fill="var(--yellow)"/>
+      </svg>
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#home" class="nav-link is-active" data-nav>home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>about</a></li>
+        <li><a href="#skills" class="nav-link" data-nav>skills</a></li>
+        <li><a href="#tools" class="nav-link" data-nav>tools</a></li>
+        <li><a href="#projects" class="nav-link" data-nav>projects</a></li>
+        <li><a href="#awards" class="nav-link" data-nav>awards</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-social">
+      <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:ayesha.fatima@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+
+    <button id="menuBtn" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><i class="fa-solid fa-bars"></i></button>
+  </header>
+
+  <!-- Mobile dropdown menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav aria-label="Mobile navigation">
+      <a href="#home" class="nav-link is-active" data-nav>home</a>
+      <a href="#about" class="nav-link" data-nav>about</a>
+      <a href="#skills" class="nav-link" data-nav>skills</a>
+      <a href="#tools" class="nav-link" data-nav>tools</a>
+      <a href="#projects" class="nav-link" data-nav>projects</a>
+      <a href="#awards" class="nav-link" data-nav>awards</a>
+      <a href="#contact" class="nav-link" data-nav>contact</a>
+    </nav>
+    <div class="mobile-social">
+      <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:ayesha.fatima@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+
+  <!-- Scrim behind the mobile menu -->
+  <div class="scrim" id="menuScrim" hidden></div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="prompt-line">> Hello, I'm Ayesha Fatima<span class="cursor"></span></div>
+      <h1>Ayesha Fatima</h1>
+      <div class="role-line" id="typedRole"></div>
+      <p class="lede">BSCS student at Allama Iqbal Open University, learning to build for the web one project at a time — and picking up a little more of the stack with every one of them.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn primary">View projects</a>
+        <a href="#contact" class="btn outline">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="marker">about</div>
+      <h2 class="section-title">A little about how I got here</h2>
+      <div class="about-grid">
+        <div class="avatar-frame">
+          <span class="initials">AF</span>
+          <div class="pencil-badge"><i class="fa-solid fa-pencil"></i></div>
+        </div>
+        <div>
+          <p>Hi, I'm Ayesha — currently working through a BS in Computer Science at Allama Iqbal Open University. I like the beginner mindset: asking a lot of questions, taking things apart to see how they work, and slowly turning that curiosity into small projects that actually run.</p>
+          <p style="margin-top:1rem;">Outside of coursework and code editors, I spend my time drawing, reading, and generally chasing anything that lets me make something with my hands — a habit that carries over neatly into building interfaces.</p>
+          <div class="facts">
+            <div><span>Degree</span><span>BS Computer Science</span></div>
+            <div><span>University</span><span>Allama Iqbal Open University</span></div>
+            <div><span>Duration</span><span>2024 – 2028</span></div>
+            <div><span>Hobbies</span><span>Drawing, coding, reading</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="marker">skills</div>
+      <h2 class="section-title">What I can build with, so far</h2>
+
+      <div class="skill-group">
+        <h3>Web development — beginner / junior level</h3>
+        <div class="chip-row">
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">JavaScript (basics)</span>
+          <span class="chip">Responsive Design</span>
+          <span class="chip">Bootstrap</span>
+          <span class="chip">Git & GitHub basics</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Programming foundations</h3>
+        <div class="chip-row">
+          <span class="chip">C</span>
+          <span class="chip">C++</span>
+          <span class="chip">Python</span>
+          <span class="chip">Assembly Language</span>
+          <span class="chip">Problem Solving</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Creative & soft skills</h3>
+        <div class="chip-row">
+          <span class="chip">Drawing / Sketching</span>
+          <span class="chip">Visual Sense</span>
+          <span class="chip">Reading</span>
+          <span class="chip">Self-learning</span>
+          <span class="chip">Attention to Detail</span>
+          <span class="chip">Time Management</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section id="tools">
+      <div class="marker">tools & tech</div>
+      <h2 class="section-title">Tools I like building with</h2>
+      <p style="margin-bottom:1rem;">A running list of the languages, frameworks and tools I use across web development and coursework.</p>
+
+      <div class="marquee-wrap">
+        <div class="marquee">
+          <div class="marquee-track" id="track1"></div>
+        </div>
+        <div class="marquee reverse">
+          <div class="marquee-track" id="track2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="marker">projects</div>
+      <h2 class="section-title">Things I've built while learning</h2>
+
+      <div class="project-grid">
+
+        <div class="project-card">
+          <div class="project-head">
+            <h3>Library Management System</h3>
+            <span class="tag-pill">Personal Project</span>
+          </div>
+          <p>A desktop application that lets a librarian add, search, issue and return books without juggling paper registers. To test it with realistic data instead of dummy entries, I pulled in a small book-catalog dataset from Kaggle to pre-populate the library's records.</p>
+          <div class="project-tags">
+            <span class="tag-pill">Python</span>
+            <span class="tag-pill">Kaggle Dataset</span>
+            <span class="tag-pill">CRUD Operations</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-head">
+            <h3>7-Segment Display Decoder</h3>
+            <span class="tag-pill">Academic — DLD</span>
+          </div>
+          <p>A Digital Logic Design coursework project where I designed and simulated a decoder circuit that converts a binary/BCD input into the correct pattern of lit segments on a 7-segment display — built entirely from logic gates.</p>
+          <div class="project-tags">
+            <span class="tag-pill">Logic Gates</span>
+            <span class="tag-pill">Circuit Design</span>
+            <span class="tag-pill">Simulation</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-head">
+            <h3>Quiz Management System</h3>
+            <span class="tag-pill">Academic — Assembly</span>
+          </div>
+          <p>A console-based quiz application written in Assembly language. It displays questions, reads the user's answer, checks it against the correct option, and keeps score — all handled at the register and instruction level.</p>
+          <div class="project-tags">
+            <span class="tag-pill">Assembly Language</span>
+            <span class="tag-pill">Low-level Logic</span>
+            <span class="tag-pill">Console I/O</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- AWARDS -->
+    <section id="awards">
+      <div class="marker">awards</div>
+      <h2 class="section-title">Recognition</h2>
+
+      <div class="award-card">
+        <svg viewBox="0 0 400 300" role="img" aria-label="Illustration of a laptop with an award ribbon">
+          <rect x="70" y="40" width="260" height="160" rx="10" fill="none" style="stroke:var(--ink); stroke-width:4;"/>
+          <rect x="86" y="56" width="228" height="128" rx="4" style="fill:var(--navy-3);"/>
+          <rect x="106" y="76" width="120" height="10" rx="5" style="fill:var(--yellow);"/>
+          <rect x="106" y="96" width="160" height="8" rx="4" style="fill:var(--ink-dim);"/>
+          <rect x="106" y="113" width="140" height="8" rx="4" style="fill:var(--ink-dim);"/>
+          <rect x="106" y="130" width="100" height="8" rx="4" style="fill:var(--ink-dim);"/>
+          <path d="M40 210 L360 210 L338 236 L62 236 Z" style="fill:var(--paper-dim); stroke:var(--ink); stroke-width:3;"/>
+          <circle cx="60" cy="55" r="4" style="fill:var(--yellow);"/>
+          <circle cx="345" cy="65" r="3" style="fill:var(--coral);"/>
+          <circle cx="48" cy="150" r="3" style="fill:var(--yellow);"/>
+          <circle cx="352" cy="150" r="4" style="fill:var(--coral);"/>
+          <path d="M283 242 L283 274 L300 263 L317 274 L317 242 Z" style="fill:var(--coral);"/>
+          <circle cx="300" cy="222" r="35" style="fill:var(--coral);"/>
+          <text x="300" y="229" text-anchor="middle" style="font-family:'IBM Plex Mono',monospace; font-size:16px; fill:#0F1626; font-weight:700;">PM</text>
+        </svg>
+
+        <div>
+          <span class="award-badge-tag"><i class="fa-solid fa-award"></i> Recipient · 2025</span>
+          <h3>PM Youth Laptop Scheme 2025</h3>
+          <div class="award-sub">Phase-IV · Government of Pakistan · HEC / PMYP</div>
+          <p>Selected as a beneficiary of the Prime Minister's Youth Laptop Scheme, a merit-based initiative that provides free laptops to deserving public-sector university students across Pakistan to support their digital learning and academic work.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="marker">contact</div>
+      <div class="contact-inner">
+        <h2>Let's build something together</h2>
+        <p>I'm always up for talking about a project, a course assignment, or just web development in general. Reach out — I usually reply within a day or two.</p>
+        <div class="contact-actions">
+          <a href="mailto:ayesha.fatima@example.com" class="btn primary"><i class="fa-solid fa-envelope"></i> Email me</a>
+          <a href="#" class="btn outline"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="btn outline"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>&copy; <span id="year"></span> Ayesha Fatima</span>
+    <span>// built with html, css & a little javascript</span>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
